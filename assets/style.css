@@ -25,13 +25,26 @@ p {
 }
 
 .back {
+  position: absolute;
   z-index: -1;
   width: 100%;
   height: 100%;
+  padding-left: calc(10vw + 45em);
 }
 
-.point {
-  fill: rgba(0, 0, 0, 0.4);
+.vertex {
+  fill: rgba(0, 0, 0, 0);
+  stroke-width: 2px;
+}
+
+.edge {
+  stroke: rgba(0, 0, 0, 0.2);
+  stroke-width: 0.5px;
+  transition: stroke 300ms;
+}
+
+.edge.mst {
+  stroke: #FE654F;
   stroke-width: 1px;
 }
 
@@ -51,8 +64,8 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 4.5em;
-  font-family: "Monoton";
-  line-height: 1;
+  font-family: 'Monoton';
+  line-height: 0.7;
   letter-spacing: 0.02em;
   color: #01BAEF;
   outline-color: #01BAEF;
@@ -66,7 +79,7 @@ p {
 }
 
 .container .content {
-  font-size: 2.1em;
+  font-size: 2em;
   color: #363732;
   text-align: left;
   line-height: 1.4;
@@ -108,6 +121,12 @@ p {
   padding: 0.5em 3em;
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
+}
+
+@media all and (max-width: 800px) {
+  .back {
+    /* display: none; */
+  }
 }
 
 @media all and (max-width: 600px) {

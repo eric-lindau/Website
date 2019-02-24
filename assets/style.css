@@ -1,0 +1,140 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: absolute;
+  margin: 0;
+  font-size: 62.5%;
+  font-family: "Quicksand";
+  color: #575366;
+  min-height: 60em;
+}
+
+p {
+  margin: 0;
+}
+
+.container .content a, .container .footer a {
+  outline: none;
+}
+
+svg {
+  z-index: -1;
+  position: absolute;
+  fill: #eeeeee;
+  height: 100vh;
+  min-height: 60em;
+  width: 100vw;
+}
+
+.container {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 1em 0 10vw;
+  margin: auto 0;
+  height: 30em;
+}
+
+.container > .title {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4.5em;
+  font-family: "Monoton";
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #01BAEF;
+  outline-color: #01BAEF;
+}
+
+.container .keyword {
+  color: #9191E9;
+}
+
+.container .content {
+  font-size: 2.1em;
+  color: #363732;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.container * {
+  text-align: left;
+}
+
+.container .content .section {
+  margin-top: 20px;
+}
+
+.container .content .header {
+  display: block;
+  margin-top: 20px;
+}
+
+.container .content .header a:hover, .container .content .header a:focus {
+  text-decoration-style: dashed;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5em 1em;
+  text-align: right;
+}
+
+.footer .link {
+  padding: 0 1em;
+}
+
+.footer .link .icon {
+  height: 3.5em;
+  vertical-align: middle;
+  padding: 0.5em 3em;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+
+@media all and (max-width: 600px) {
+  .container {
+    min-height: 40em;
+    padding: 15em 0 0 0;
+    margin: 0 auto;
+    width: 38em;
+  }
+
+  svg {
+    display: none;
+  }
+
+  .footer {
+    position: fixed;
+    text-align: center;
+    padding: 1em 0;
+    background-color: #eeeeee;
+    border-top: 1px solid #dddddd;
+    margin: 0 calc(50% - 50vw);
+  }
+}
+
+@media all and (max-width: 400px) {
+    .container {
+        width: 35em;
+    }
+}
+
+@media all and (max-width: 360px) {
+  body {
+    font-size: 2.76vw;
+  }
+}

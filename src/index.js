@@ -1,8 +1,8 @@
 const svgns = "http://www.w3.org/2000/svg"
 
-const numVertices = 13;
+const numVertices = 9;
 // const minX = 5, minY = 20, maxX = 90, maxY = 65;
-const minX = 10, minY = 10, maxX = 80, maxY = 80;
+const minX = 25, minY = 2, maxX = 65, maxY = 96;
 
 function union(sets, e1, e2) {
   sets[find(sets, e2)].parent = sets[find(sets, e1)];

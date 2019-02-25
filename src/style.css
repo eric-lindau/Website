@@ -29,7 +29,6 @@ p {
   z-index: -1;
   width: 100%;
   height: 100%;
-  /* padding-left: calc(10vw + 35em); */
 }
 
 .vertex {
@@ -44,7 +43,7 @@ p {
 }
 
 .edge.mst {
-  stroke: #FE654F;
+  stroke: rgb(254, 101, 79);
   stroke-width: 1px;
 }
 
@@ -65,7 +64,7 @@ p {
   text-transform: uppercase;
   font-size: 4.5em;
   font-family: 'Monoton';
-  line-height: 0.7;
+  line-height: 1;
   letter-spacing: 0.02em;
   color: #01BAEF;
   outline-color: #01BAEF;
@@ -75,7 +74,7 @@ p {
 }
 
 .container .keyword {
-  color: #9191E9;
+  color: #9090e9;
 }
 
 .container .content {
@@ -83,6 +82,7 @@ p {
   color: #363732;
   text-align: left;
   line-height: 1.4;
+  font-weight: bold;
 }
 
 .container * {
@@ -121,13 +121,6 @@ p {
   padding: 0.5em 3em;
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
-}
-
-@media all and (max-width: 850px) {
-  .back {
-    /* padding-left: calc(10vw + 20em); */
-    /* padding-top: 40vh; */
-  };
 }
 
 @media all and (max-width: 600px) {

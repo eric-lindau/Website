@@ -1,8 +1,7 @@
 const svgns = "http://www.w3.org/2000/svg"
 
-const numVertices = 9;
-// const minX = 5, minY = 20, maxX = 90, maxY = 65;
-const minX = 25, minY = 2, maxX = 65, maxY = 96;
+const numVertices = 10;
+const minX = 3, minY = 3, maxX = 94, maxY = 84;
 
 function union(sets, e1, e2) {
   sets[find(sets, e2)].parent = sets[find(sets, e1)];
@@ -39,7 +38,7 @@ setTimeout(() => {
         edge.setAttributeNS(null, 'id', 'E' + idx);
         bg.appendChild(edge);
         idx++;
-      }, i * 50);
+      }, i * 40);
     });
   });
   setTimeout(() => {
@@ -54,5 +53,5 @@ setTimeout(() => {
         }
       }, i * 40);
     });
-  }, (vertices.length * (vertices.length - 1)) * 4);
+  }, (vertices.length * (vertices.length - 1)) * 1);
 }, 200);

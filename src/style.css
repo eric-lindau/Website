@@ -12,7 +12,6 @@ body {
   margin: 0;
   font-size: 62.5%;
   font-family: "Quicksand";
-  color: #575366;
   min-height: 60em;
 }
 
@@ -37,13 +36,15 @@ p {
 }
 
 .edge {
-  stroke: rgba(0, 0, 0, 0.2);
+  stroke: rgba(0, 0, 0, 0.15);
   stroke-width: 0.5px;
   transition: stroke 300ms;
 }
 
 .edge.mst {
-  stroke: rgb(254, 101, 79);
+  /* stroke: rgba(254, 101, 79, 0.5); */
+  /* stroke: rgba(39, 251, 107, 0.5); */
+  stroke: rgba(245, 47, 87, 0.3);
   stroke-width: 1px;
 }
 
@@ -54,7 +55,7 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 0 1em 0 10vw;
+  padding: 0 1em 0 20vw;
   margin: auto 0;
   height: 30em;
 }
@@ -66,20 +67,24 @@ p {
   font-family: 'Monoton';
   line-height: 1;
   letter-spacing: 0.02em;
-  color: #01BAEF;
-  outline-color: #01BAEF;
+  color: #63D2FF;
+  outline-color: #63D2FF;
   user-select: none;
   font-weight: normal;
   margin: 0;
 }
 
+.container a {
+  color: #9191e9;
+}
+
 .container .keyword {
-  color: #9090e9;
+  border-bottom: 1px solid black;
 }
 
 .container .content {
-  font-size: 2em;
-  color: #363732;
+  font-size: 2.1em;
+  color: #575366;
   text-align: left;
   line-height: 1.4;
   font-weight: bold;
@@ -131,15 +136,10 @@ p {
     width: 38em;
   }
 
-  svg {
-    display: none;
-  }
-
   .footer {
     position: fixed;
     text-align: center;
     padding: 1em 0;
-    background-color: #eeeeee;
     border-top: 1px solid #dddddd;
     margin: 0 calc(50% - 50vw);
   }

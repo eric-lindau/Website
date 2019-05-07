@@ -36,7 +36,7 @@ p {
 }
 
 .edge {
-  stroke: rgba(0, 0, 0, 0.15);
+  stroke: rgba(0, 0, 0, 0.1);
   stroke-width: 0.5px;
   transition: stroke 300ms;
 }
@@ -62,40 +62,34 @@ p {
 
 .container > .title {
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 4.5em;
-  font-family: 'Monoton';
-  line-height: 1;
+  font-family: 'Cardo';
+  line-height: 0.5;
   letter-spacing: 0.02em;
   color: #63D2FF;
   outline-color: #63D2FF;
   user-select: none;
   font-weight: normal;
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
 .container a {
-  color: #9191e9;
-}
-
-.container .keyword {
-  border-bottom: 1px solid black;
+  color: #170312;
+  text-decoration: none;
 }
 
 .container .content {
-  font-size: 2.1em;
-  color: #575366;
+  padding-right: 20px;
+  width: 30em;
+  font-size: 1.7em;
+  color: #170312;
   text-align: left;
-  line-height: 1.4;
+  line-height: 1.6;
   font-weight: bold;
 }
 
 .container * {
   text-align: left;
-}
-
-.container .content .section {
-  margin-top: 20px;
 }
 
 .container .content .header {
@@ -123,17 +117,54 @@ p {
 .footer .link .icon {
   height: 3.5em;
   vertical-align: middle;
-  padding: 0.5em 3em;
+  padding: 0.5em 2em;
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
 }
 
+ul {
+  margin: 0;
+  padding: 0 0 0 10px;
+  list-style: none;
+}
+
+ul li {
+  border-left: 1px solid #170312;
+  margin: 5px 0;
+  transition: border-left 100ms;
+}
+
+ul li a {
+  color: #170312;
+  display: inline-block;
+  padding: 0 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+ul li:hover {
+  border-left: 3px solid #63D2FF;
+}
+
+.sub {
+  font-size: 0.65em;
+  padding: 0 15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 @media all and (max-width: 600px) {
   .container {
+    width: 100%;
     min-height: 40em;
     padding: 15em 0 0 0;
     margin: 0 auto;
-    width: 38em;
+    width: 37em;
+  }
+
+  .container .content {
+    margin: 0;
+    width: 100%;
+    padding: 0;
   }
 
   .footer {
@@ -153,6 +184,6 @@ p {
 
 @media all and (max-width: 360px) {
   body {
-    font-size: 2.76vw;
+    font-size: 2.5vw;
   }
 }
